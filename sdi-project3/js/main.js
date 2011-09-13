@@ -5,11 +5,11 @@
 var handleData = function (json) {
  	for (var i = 0; i < json.surfers.length; i++) {
  		var pets = json.surfers[i];
- 		console.log ("Age ID: " + surfers.tagid + ", Name: " + surfers.name + ", Age: " + surfers.age);
+ 		console.log ("Surf ID: " + surfers.surfid + ", Name: " + surfers.name + ", Age: " + surfers.age);
 	};
 };
 
-handleData(json)
+handleData(json2)
 
 
 var jsonstring = JSON.stringify(json);
