@@ -18,3 +18,7 @@ var json = {
 		}
 	}
 };
+
+for (var key in json.surfers) {
+	var surfers = json.surfers[key]; // surfers.age
+};
