@@ -27,17 +27,17 @@ for (var key in json.surfers) {
 var json2 ={
 	"surfers": [
 		{
-			"surfid": "023",
+			"surfid": 023,
 			"name": "Manny",
 			"age": 23
 		},
 		{
-			"surfid": "026",
+			"surfid": 026,
 			"name": "Travis",
 			"age": 26
 		},
 		{
-			"surfid": "046",
+			"surfid": 046,
 			"name": "Paul",
 			"age": 46
 		}
