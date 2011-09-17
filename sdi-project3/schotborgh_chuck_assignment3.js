@@ -1,9 +1,8 @@
-//SDIProject3
-//Author: ChuckSchotborgh
 var surfDude = {
-		lunchSpot: "Robertos",
+	lunchSpot: "Robertos",
 	rating: "novice",
-		amateur: true,
+	amateur: true,
+	//destination: "Ocean Beach"
 	location: "San Deigo",
     surfboard: [ 
 		"Twin Finn", 
@@ -34,62 +33,86 @@ var burritoStand = surfDude.getlunchSpot();// accessor method
 	surfDude.announce("We'll surf all day long, when we get hungry lets's eat at " + burritoStand + "!");
 	surfDude.driveTo(surfSpot);// mutator + procedure method
 	
-var energy = surfDude.select(surfSpot); // function method
+//var energy = surfDude.select(surfSpot); // function method
+
+var surfDude = {
+	id: "001", 
+	name: "Chuck",
+	interests: [
+		"Sunshine",
+		"Surfing",
+		"Skateboarding",
+		"Music"
+	],
+	age: 41, 
+	sayHi: function (){
+		console. log("Let's catch a big wave!"); 
+	},
+	//Nested object
+	address: {
+		Street: 10010,
+		City: "Reno"
+	},
+	skill:{
+		Novice: true,
+		Pro: false,
+	}
+	
+};
+
+var key = "name";
+
+surfDude.name = "Manny";
+
+console.log (surfDude[key]);
+console.log (surfDude["interests"]);
+console.log (surfDude.sayHi);
+
+surfDude.sayHi(); 
+
+	surfDude.sayHi = function (){
+		console. log("Kowabunga!");
+	}; 
+surfDude["sayHi"](); 
+
+	for (var key in surfDude) {;
+		console. log("key: " + key + ", value: ", surfDude[key]);
+	}; 
 
 var SurfBoardNames = [
-                      "Longboard",
-                      "Twin Finn",
-                      "Thruster",
-                      "Boogie"
-    ],
+		"Longboard", 
+		"Twin Finn", 
+		"Thruster", 
+		"Boogie"
+	],
 	secondsPerWave = [
-                          30,
-                          15,
-                          60,
-                          60
-        ];
-    var surfOneWave  = function(SurfBoardName , secondsThisWave ) {
-	console.log("Caught a big wave on the" + " " + SurfBoardName  + " for " 
+			15, 
+			12, 
+			15, 
+			77
+	];
+var surfOneWave = function( SurfBoardName , secondsThisWave ) {
+	console.log("Catching the wave on" + SurfBoardName  + " for " 
 		+ secondsThisWave  + " seconds ." );
-    for(var seconds  = 0; seconds  < secondsThisWave; seconds  += 5) {
-		var secondsRemain = secondsThisWave  - seconds; // function method
-		console.log(seconds  + " surfed, " +  secondsRemain + " to go!");
+		var seconds = 0;
+	for(seconds  = 0; seconds  < secondsThisWave; seconds  += 5) {
+		var secondsRemain = secondsThisWave  - seconds;
+		console.log(seconds  + " done, " +  secondsRemain + " to go!");
+	
 	}
-	console.log("I fell of the " + SurfBoardName +","+" "+"I can't believe it!");
+	console.log("I'm done with the " + " done, " + SurfBoardName  + ".");
+	
 };
-var surfAllWaves = function () {
-	for (var SurfBoardNum = 0; SurfBoardNum < SurfBoardNames.length; SurfBoardNum++) {
+var surfAllWaves = function() {
+	for (var SurfBoardNum = 0; SurfBoardNum < SurfBoardNames.length; SurfBoardNum+=1) {
 		var SurfBoardName  = SurfBoardNames [SurfBoardNum],
 			secondsThisWave = secondsPerWave[SurfBoardNum];
-		surfOneWave(SurfBoardName , secondsThisWave);
+		surfOneWave(SurfBoardName, secondsThisWave);
 	} //for SurfBoardNum
 }; //surfAllWaves
 //encapsulation
-surfAllWaves()
 
-
-
-//Procedure
-
-var p = true;
-    q = false;
-    r = false;
-
-if ((p && q) || r) {
-// if (p && (q || r)) {
-// if ((p && !q) || (q && r)) {
-//if (!(p || r)) {
-    console.log("Surf day is true");}
-    else
-{
-    console.log("Surf day is false");
-}
-    
-    console.log("Surf day is out of the question"+" "+ ((p && q) || r));
-    //console.log("The expression is " + (p && (q || r)));
-    //console.log("The expression is " + (p && !q) || (q && r));
-    //console.log("The expression is " + (!(p || r)));
-    
+surfAllWaves();
 
 // Number Function with While Loop
 
@@ -139,27 +162,5 @@ var choseBeach = function(surfSpot) {
 
 		
 var sharkAttacks = choseBeach(4);
-	console.log("Perfect surfing condtions! I don't care if there are sharks, I'm surfing here today!");
-
-
-//String Function
-
-var numMatch = function (numToTest){
-    console.log (numToTest);
-    var firstPos = numToTest.search (/\W/);
-    if (firstPos === 3){
-        var tempString = numToTest.substring (firstPos+1, numToTest.length);
-        var secondPos = tempString.search (/\W/);
-        if (secondPos === 3){
-            var lastString = tempString.substring (4, numToTest.length);
-            if (lastString.length === 4){
-                return true;
-            }
-        }
-    }
-}
-if (numMatch ("858-272-7433")){
-//if (numMatch ("+1 858-272-7433")){ //this is not a free number
-     console.log ("This is a free local surf report phone number!");
-}
+	console.log("Perfect surfing conditions! I don't care if there are sharks, I'm surfing here today!");
 
