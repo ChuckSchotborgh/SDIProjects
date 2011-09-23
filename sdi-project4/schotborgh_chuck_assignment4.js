@@ -50,6 +50,11 @@ verifyUrl("http://www.igt.com");
 verifyUrl("https://www.igt.com");
 
 /*
+	String Lib SDI 2011
+	Title-case a string (split into words, then uppercase the first letter of each word)
+*/
+
+/*
     String 		
 
     [x]Does a string follow a 123-456-7890 pattern like a phone number?
