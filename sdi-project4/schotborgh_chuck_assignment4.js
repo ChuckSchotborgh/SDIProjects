@@ -35,6 +35,16 @@ console.log ("Is a local phone number!");
 var verifyUrl = function (strUrl) {
 		var matchHttp = strUrl.match("http:");
 		var matchHttps = strUrl.match("https:");
+    if (matchHttp == "http:") {
+		console.log ("Yes! It tastes like http:!");
+    }
+    else if (matchHttps == "https:") {
+		console.log ("Yup! It smells like https:!");
+    }
+    else {
+		console.log ("Nope! Please try another type of Url address.");
+    }
+};
 
 /*
     String 		
