@@ -152,4 +152,20 @@ var smNum = function(array, givenNum) {
 var strSwap = "Forty Two"
 console.log(strSwap.replace(/Forty Two/i,42));
 
+/*
+	Given a string that is a list of things separated by a given string, as well as another string separator, 
+	return a string with the first separator changed to the second: "a,b,c" + "," + "/" ? "a/b/c".
+
+Number Lib
+
+    -Fuzzy-match a number: is the number above or below a number within a certain percent?
+
+   -Find the total value of just the numbers in an array, even if some of the items are not numbers.
+
+   -Given an array of objects and the name of a key, 
+   return the array sorted by the value of that key in each of the 
+   objects: "a" + [{a:2},{a:3},{a:1}] ? [{a:1},{a:2},{a:3}].
+
+*/
+
 
