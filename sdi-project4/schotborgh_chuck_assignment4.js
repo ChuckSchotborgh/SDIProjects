@@ -52,7 +52,7 @@ verifyUrl("https://www.igt.com");
 /*
 	String Lib SDI 2011
 	Title-case a string (split into words, then uppercase the first letter of each word)
-*/
+
 var capsCaseTitle = function (tCase) {
 		var wordVal = tCase.value;
 		var tCaseVal = '';
@@ -67,7 +67,13 @@ var capsCaseTitle = function (tCase) {
     }
     tCase.value = tCaseVal;// SampleBox can be tested in my Html
 }
-                
+*/
+/*
+	Number Lib SDI 2011
+	Find the number of hours or days difference between two dates
+*/
+
+
 /*
     String 		
 
