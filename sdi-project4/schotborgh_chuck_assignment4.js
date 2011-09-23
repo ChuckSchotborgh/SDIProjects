@@ -108,3 +108,8 @@ var num = [
 ];
 console.log(num.sort(sortNum));
 
+/*
+	Number Lib SDI 2011
+	Find the smallest value in an array (this one is a random array) that is greater than a given number.
+*/
+
