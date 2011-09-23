@@ -57,6 +57,17 @@ var capsCaseTitle = function (tCase) {
 		var wordVal = tCase.value;
 		var tCaseVal = '';
 		var wordVal = wordVal.split(' ');
+		
+	for(var i=0; i < wordVal.length; i++) {
+		tCaseVal += wordVal
+			[i].substring
+		(0,1).toUpperCase() + wordVal;s
+			[i].substring
+		(1,wordVal[i].length) + ' ';
+    }
+    tCase.value = tCaseVal;// SampleBox can be tested in my Html
+}
+                
 /*
     String 		
 
