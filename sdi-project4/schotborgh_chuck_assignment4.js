@@ -2,28 +2,26 @@
 //Author Chuck Schotborgh
 
 /*	
-	String Lib SDI 2011
-	Does a string follow a 123-456-7890 pattern like a phone number?
+String Lib SDI 2011
+Does a string follow a 123-456-7890 pattern like a phone number?	[1]
 */
 var phNum = function (digitsToTest){
 	console.log (digitsToTest);
-	    var firstDigits = digitsToTest.search (/\W/);
-        
-        if (firstDigits === 3){
-	    var seeString = digitsToTest.substring (firstDigits+1, digitsToTest.length);
-	    var secondDigits = seeString.search (/\W/);
-
-	if (secondDigits === 3){
+	var firstDigits = digitsToTest.search (/\W/);
+		if (firstDigits === 3){
+			var seeString = digitsToTest.substring (firstDigits+1, digitsToTest.length);
+			var secondDigits = seeString.search (/\W/);
+		if (secondDigits === 3){
 			var lastDigits = seeString.substring (4, digitsToTest.length);
-		
-	if (lastDigits.length === 4){
-        return true;
+		if (lastDigits.length === 4){
+			return true;
 		}
 		}
 		}
-}
-if (phNum ("123-456-7890")){
+};
+
 //if (phNum ("+0 123-456-7890")){ //this is not a local number no message
+if (phNum ("123-456-7890")){
 console.log ("Is a local phone number!");
 }
 
@@ -93,20 +91,27 @@ console.log (formatNum(5.2, 3) + " USD");
 	Find the total value of just the numbers in an array, even if some of the items are not numbers.
 */
 
-function sortNum(a, b)
-{
-return a - b;
-}
 
-var num = [
-	"10", 
-	"5", 
-	"40", 
-	"25", 
-	"100", 
-	"1"
+var surfBoard1 = "Thruster",
+    surfBoard2 = "Twin finn",
+    surfBoard3 = "Long Board"
+;
+
+var surfBoards = [
+		"Thruster",
+		"Twin finn",
+		"Long Board"
 ];
-console.log(num.sort(sortNum));
+
+var styles = [
+		"fast on big waves",
+		"great for ariel jumps",
+		"cool, mellow wave rides"
+];
+
+		for (var i=0, w=surfBoards.length; i < w; i++) {
+		console.log( surfBoards[i] +" "+  "surfboards" +" "+ "are " + styles[i] +"!" );
+};
 
 /*
 	Number Lib SDI 2011
@@ -160,7 +165,8 @@ Number Lib
 
     -Fuzzy-match a number: is the number above or below a number within a certain percent?
 
-   -Find the total value of just the numbers in an array, even if some of the items are not numbers.
+
+
 
    -Given an array of objects and the name of a key, 
    return the array sorted by the value of that key in each of the 
