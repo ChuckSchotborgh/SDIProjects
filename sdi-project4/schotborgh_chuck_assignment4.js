@@ -72,7 +72,9 @@ var capsCaseTitle = function (tCase) {
 	Number Lib SDI 2011
 	Find the number of hours or days difference between two dates
 */
-
+var today = new Date()
+	var yr = new Date("November 24, 2011");// change the date here
+        yr.setYear = today.getYear;        
 
 /*
     String 		
