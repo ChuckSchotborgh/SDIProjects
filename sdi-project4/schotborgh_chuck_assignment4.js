@@ -61,7 +61,7 @@ var capsCaseTitle = function (tCase) {
 	for(var i=0; i < wordVal.length; i++) {
 		tCaseVal += wordVal
 			[i].substring
-		(0,1).toUpperCase() + wordVal;s
+		(0,1).toUpperCase() + wordVal;
 			[i].substring
 		(1,wordVal[i].length) + ' ';
     }
