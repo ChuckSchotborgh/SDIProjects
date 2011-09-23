@@ -2,8 +2,9 @@
 //Author Chuck Schotborgh
 
 /*	
-String Lib SDI 2011                                          [1] 
-Does a string follow a 123-456-7890 pattern like a phone number?	
+String Lib SDI 2011                                          
+Does a string follow a 123-456-7890 pattern like a phone number?
+[1] 	
 */
 var phNum = function (digitsToTest){
 	console.log (digitsToTest);
@@ -28,7 +29,8 @@ console.log ("Is a local phone number!");
 
 /*	
 String Lib SDI 2011
-Does a string follow an aaa@bbb.ccc pattern like an email address? [2]
+Does a string follow an aaa@bbb.ccc pattern like an email address?
+[2]
 */
 var emailMatch = function (emailToVerify){
 	console.log (emailToVerify);
@@ -51,8 +53,9 @@ if (emailMatch ("chuck@chuckschotborgh.com")){
 
 
 /*
-String Lib SDI 2011                                    [3]
-Is the string a URL? (Does it start with http: or https:?)	
+String Lib SDI 2011                                   
+Is the string a URL? (Does it start with http: or https:?)
+[3]	
 */
 var verifyUrl = function (strUrl) {
 	var matchHttp = strUrl.match("http:");
@@ -75,8 +78,9 @@ verifyUrl("https://www.igt.com");
 
 
 /*
-String Lib SDI 2011                                                             [4] 
-Title-case a string (split into words, then uppercase the first letter of each word) 
+String Lib SDI 2011                                                             
+Title-case a string (split into words, then uppercase the first letter of each word)
+[4]  
 */
 var capsCaseTitle = function (tCase) {
     var wordVal = tCase.value;
@@ -91,9 +95,11 @@ var capsCaseTitle = function (tCase) {
         tCase.value = tCaseVal;// SampleBox can be tested in my Html
 }
 
+
 /*
-Number Lib SDI 2011                                      [5] 
+Number Lib SDI 2011                                      
 Find the number of hours or days difference between two dates
+[5] 
 */
 var today = new Date()
     var yr = new Date("November 24, 2011");// change the date here
@@ -106,8 +112,9 @@ console.log(daysLeft +" "+ "days left until Thanksgiving");
 
 
 /*
-Number Lib SDI 2011                                                              [6] 
+Number Lib SDI 2011                                                             
 Format a number to use a specific number of decimal places, as for money: 2.1 ? 2.10
+[6] 
 */
 var formatNum = function (num$Format, precision){
     return num$Format.toPrecision(precision);
@@ -118,6 +125,7 @@ console.log (formatNum(5.2, 3) + " USD");
 /*
 Number Lib SDI 2011
 Find the total value of just the numbers in an array, even if some of the items are not numbers.
+[7] 
 */
 var surfBoard1 = "Thruster",
     surfBoard2 = "Twin finn",
@@ -137,9 +145,11 @@ var styles = [
     console.log( surfBoards[i] +" "+  "surfboards" +" "+ "are " + styles[i] +"!" );
 };
 
+
 /*
 Number Lib SDI 2011
 Find the smallest value in an array (this one is a random array) that is greater than a given number.
+[8] 
 */
 var test = [
         15,
@@ -175,28 +185,25 @@ var smNum = function(array, givenNum) {
 
 (smNum(test, 4));// test your numbers against existing sequenced array
 
+
 /*
- 	Number Lib SDI 2011
-        Given a string version of a number such as "42", return the value as an actual Number, such as 42
+Number Lib SDI 2011
+Given a string version of a number such as "42", return the value as an actual Number, such as 42
+[8] 
 */
 
 var strSwap = "Forty Two"
 console.log(strSwap.replace(/Forty Two/i,42));
 
 /*
-	Given a string that is a list of things separated by a given string, as well as another string separator, 
-	return a string with the first separator changed to the second: "a,b,c" + "," + "/" ? "a/b/c".
+Given a string that is a list of things separated by a given string, as well as another string separator, 
+return a string with the first separator changed to the second: "a,b,c" + "," + "/" ? "a/b/c".
 
-Number Lib
+-Fuzzy-match a number: is the number above or below a number within a certain percent?
 
-    -Fuzzy-match a number: is the number above or below a number within a certain percent?
-
-
-
-
-   -Given an array of objects and the name of a key, 
-   return the array sorted by the value of that key in each of the 
-   objects: "a" + [{a:2},{a:3},{a:1}] ? [{a:1},{a:2},{a:3}].
+-Given an array of objects and the name of a key, 
+return the array sorted by the value of that key in each of the 
+objects: "a" + [{a:2},{a:3},{a:1}] ? [{a:1},{a:2},{a:3}].
 
 */
 
