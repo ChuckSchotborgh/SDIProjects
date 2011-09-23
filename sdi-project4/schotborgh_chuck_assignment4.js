@@ -120,4 +120,7 @@ var test = [
 			22,
 			77
 	];
-
+var smNum = function(array, givenNum) {
+		var savedNum = Number.MAX_VALUE;
+		var i = 0;
+		var testNum;
