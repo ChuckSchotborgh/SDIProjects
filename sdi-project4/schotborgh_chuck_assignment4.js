@@ -77,7 +77,9 @@ var today = new Date()
         yr.setYear = today.getYear;        
 		daysLeft = (yr.getTime() - today.getTime()) / (1000*60*60*24);
 		daysLeft = Math.round(daysLeft);
-
+                
+document.write("There are only "+daysLeft+" days left until Thanksgiving Day!");	
+console.log(daysLeft +" "+ "days left until Thanksgiving");
 
 /*
     String 		
