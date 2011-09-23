@@ -82,3 +82,8 @@ console.log(daysLeft +" "+ "days left until Thanksgiving");
 	Number Lib SDI 2011
 	Format a number to use a specific number of decimal places, as for money: 2.1 ? 2.10
 */
+
+var formatNum = function (num$Format, precision){
+    return num$Format.toPrecision(precision);
+};
+console.log (formatNum(5.2, 3) + " USD");
