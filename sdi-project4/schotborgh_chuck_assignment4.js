@@ -45,6 +45,10 @@ var emailMatch = function (emailToVerify){
     }
 };
 
+if (emailMatch ("chuck@chuckschotborgh.com")){
+    console.log ("is an email!");
+}
+
 
 /*
 String Lib SDI 2011                                    [2]
