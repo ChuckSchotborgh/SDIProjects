@@ -45,6 +45,9 @@ var verifyUrl = function (strUrl) {
 		console.log ("Nope! Please try another type of Url address.");
     }
 };
+verifyUrl("ftp://www.igt.com");
+verifyUrl("http://www.igt.com");
+verifyUrl("https://www.igt.com");
 
 /*
     String 		
