@@ -26,6 +26,8 @@ if (phNum ("123-456-7890")){
 //if (phNum ("+0 123-456-7890")){ //this is not a local number no message
 console.log ("Is a local phone number!");
 }
+
+/*
     String 		
 
     [x]Does a string follow a 123-456-7890 pattern like a phone number?
