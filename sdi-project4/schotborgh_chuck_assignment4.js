@@ -28,6 +28,15 @@ console.log ("Is a local phone number!");
 }
 
 /*
+	String Lib SDI 2011
+	Is the string a URL? (Does it start with http: or https:?)
+*/
+
+var verifyUrl = function (strUrl) {
+		var matchHttp = strUrl.match("http:");
+		var matchHttps = strUrl.match("https:");
+
+/*
     String 		
 
     [x]Does a string follow a 123-456-7890 pattern like a phone number?
