@@ -36,6 +36,16 @@ var emailMatch = function (emailToVerify){
     if (charPos1 < 32){
             var typString = emailToVerify.substring (charPos1++, emailToVerify.length);
             var charPos2 = typString.search (/\W/);
+    if (charPos2 < 32){
+            var endString = typString.substring (3, emailToVerify.length);
+    if (endString.length > 0){
+    return true;
+    }
+    }
+    }
+};
+
+
 /*
 String Lib SDI 2011                                    [2]
 Is the string a URL? (Does it start with http: or https:?)	
