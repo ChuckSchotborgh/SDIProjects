@@ -53,7 +53,10 @@ verifyUrl("https://www.igt.com");
 	String Lib SDI 2011
 	Title-case a string (split into words, then uppercase the first letter of each word)
 */
-
+var capsCaseTitle = function (tCase) {
+		var wordVal = tCase.value;
+		var tCaseVal = '';
+		var wordVal = wordVal.split(' ');
 /*
     String 		
 
