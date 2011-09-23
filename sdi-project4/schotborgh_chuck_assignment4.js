@@ -87,3 +87,24 @@ var formatNum = function (num$Format, precision){
     return num$Format.toPrecision(precision);
 };
 console.log (formatNum(5.2, 3) + " USD");
+
+/*
+	Number Lib SDI 2011
+	Find the total value of just the numbers in an array, even if some of the items are not numbers.
+*/
+
+function sortNum(a, b)
+{
+return a - b;
+}
+
+var num = [
+	"10", 
+	"5", 
+	"40", 
+	"25", 
+	"100", 
+	"1"
+];
+console.log(num.sort(sortNum));
+
