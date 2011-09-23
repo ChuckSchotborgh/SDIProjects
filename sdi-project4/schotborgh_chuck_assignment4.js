@@ -189,7 +189,7 @@ var smNum = function(array, givenNum) {
 /*
 Number Lib SDI 2011
 Given a string version of a number such as "42", return the value as an actual Number, such as 42
-[8] 
+[9] 
 */
 
 var strSwap = "Forty Two"
