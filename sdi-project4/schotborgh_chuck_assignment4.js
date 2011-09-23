@@ -5,6 +5,9 @@
 	String Lib SDI 2011
 	Does a string follow a 123-456-7890 pattern like a phone number?
 */
+ar phNum = function (digitsToTest){
+		console.log (digitsToTest);
+			var firstDigits = digitsToTest.search (/\W/);
 
     String 		
 
