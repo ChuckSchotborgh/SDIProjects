@@ -124,3 +124,10 @@ var smNum = function(array, givenNum) {
 		var savedNum = Number.MAX_VALUE;
 		var i = 0;
 		var testNum;
+    while (i < array.length){
+		testNum = array[i];
+		if ((testNum > givenNum) && (testNum < savedNum)){
+			savedNum = testNum;
+		}
+		i+=1;
+	}
