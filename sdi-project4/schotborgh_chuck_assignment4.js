@@ -78,4 +78,7 @@ var today = new Date()
                 
 document.write("There are only "+daysLeft+" days left until Thanksgiving Day!");	
 console.log(daysLeft +" "+ "days left until Thanksgiving");
-
+/*
+	Number Lib SDI 2011
+	Format a number to use a specific number of decimal places, as for money: 2.1 ? 2.10
+*/
