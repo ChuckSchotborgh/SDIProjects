@@ -28,7 +28,7 @@ console.log ("Is a local phone number!");
 
 /*	
 String Lib SDI 2011
-Does a string follow an aaa@bbb.ccc pattern like an email address? [1]
+Does a string follow an aaa@bbb.ccc pattern like an email address? [2]
 */
 var emailMatch = function (emailToVerify){
 	console.log (emailToVerify);
@@ -51,7 +51,7 @@ if (emailMatch ("chuck@chuckschotborgh.com")){
 
 
 /*
-String Lib SDI 2011                                    [2]
+String Lib SDI 2011                                    [3]
 Is the string a URL? (Does it start with http: or https:?)	
 */
 var verifyUrl = function (strUrl) {
@@ -75,7 +75,7 @@ verifyUrl("https://www.igt.com");
 
 
 /*
-String Lib SDI 2011                                                             [3] 
+String Lib SDI 2011                                                             [4] 
 Title-case a string (split into words, then uppercase the first letter of each word) 
 */
 var capsCaseTitle = function (tCase) {
@@ -92,85 +92,84 @@ var capsCaseTitle = function (tCase) {
 }
 
 /*
-	Number Lib SDI 2011
-	Find the number of hours or days difference between two dates
+Number Lib SDI 2011                                      [5] 
+Find the number of hours or days difference between two dates
 */
 var today = new Date()
-	var yr = new Date("November 24, 2011");// change the date here
+    var yr = new Date("November 24, 2011");// change the date here
         yr.setYear = today.getYear;        
-		daysLeft = (yr.getTime() - today.getTime()) / (1000*60*60*24);
-		daysLeft = Math.round(daysLeft);
-                
+        daysLeft = (yr.getTime() - today.getTime()) / (1000*60*60*24);
+        daysLeft = Math.round(daysLeft);
+
 document.write("There are only "+daysLeft+" days left until Thanksgiving Day!");	
 console.log(daysLeft +" "+ "days left until Thanksgiving");
-/*
-	Number Lib SDI 2011
-	Format a number to use a specific number of decimal places, as for money: 2.1 ? 2.10
-*/
 
+
+/*
+Number Lib SDI 2011                                                              [6] 
+Format a number to use a specific number of decimal places, as for money: 2.1 ? 2.10
+*/
 var formatNum = function (num$Format, precision){
     return num$Format.toPrecision(precision);
 };
 console.log (formatNum(5.2, 3) + " USD");
 
+
 /*
-	Number Lib SDI 2011
-	Find the total value of just the numbers in an array, even if some of the items are not numbers.
+Number Lib SDI 2011
+Find the total value of just the numbers in an array, even if some of the items are not numbers.
 */
-
-
 var surfBoard1 = "Thruster",
     surfBoard2 = "Twin finn",
     surfBoard3 = "Long Board"
 ;
-
 var surfBoards = [
 		"Thruster",
 		"Twin finn",
 		"Long Board"
 ];
-
 var styles = [
 		"fast on big waves",
 		"great for ariel jumps",
 		"cool, mellow wave rides"
 ];
-
-		for (var i=0, w=surfBoards.length; i < w; i++) {
-		console.log( surfBoards[i] +" "+  "surfboards" +" "+ "are " + styles[i] +"!" );
+    for (var i=0, w=surfBoards.length; i < w; i++) {
+    console.log( surfBoards[i] +" "+  "surfboards" +" "+ "are " + styles[i] +"!" );
 };
 
 /*
-	Number Lib SDI 2011
-	Find the smallest value in an array (this one is a random array) that is greater than a given number.
+Number Lib SDI 2011
+Find the smallest value in an array (this one is a random array) that is greater than a given number.
 */
 var test = [
-			15,
-			12,
-			35,
-			14,
-			22,
-			77
+        15,
+        12,
+        35,
+        14,
+        22,
+        77
 	];
 var smNum = function(array, givenNum) {
-		var savedNum = Number.MAX_VALUE;
-		var i = 0;
-		var testNum;
-    while (i < array.length){
-		testNum = array[i];
-		if ((testNum > givenNum) && (testNum < savedNum)){
-			savedNum = testNum;
-		}
-		i+=1;
-	}
-    if (savedNum < givenNum){
-		console.log (givenNum + " a greater number than the given number doesn't exist within the sequenced array");
-		return givenNum;
-	}
-    else {
-		console.log (givenNum + " the number is not in the array, but the number greater with in the array is " + savedNum);
-		return savedNum;
-		
+    var savedNum = Number.MAX_VALUE;
+    var i = 0;
+    var testNum;
+        while (i < array.length){
+            testNum = array[i];
+        if ((testNum > givenNum) && (testNum < savedNum)){
+            savedNum = testNum;
+        }
+        i+=1;
+        }
+        if (savedNum < givenNum){
+            console.log (givenNum +
+            " a greater number than the given number doesn't exist within the sequenced array");
+            return givenNum;
+        }
+        else {
+            console.log (givenNum +
+            " the number is not in the array, but the number greater with in the array is " + savedNum);
+            return savedNum;
+        
 	}
 };
 
