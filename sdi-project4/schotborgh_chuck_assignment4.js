@@ -143,3 +143,8 @@ var smNum = function(array, givenNum) {
 };
 
 (smNum(test, 4));// test your numbers against existing sequenced array
+
+/*
+ 	Number Lib SDI 2011
+        Given a string version of a number such as "42", return the value as an actual Number, such as 42
+*/
