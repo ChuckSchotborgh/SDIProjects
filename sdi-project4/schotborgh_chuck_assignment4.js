@@ -141,3 +141,5 @@ var smNum = function(array, givenNum) {
 		
 	}
 };
+
+(smNum(test, 4));// test your numbers against existing sequenced array
