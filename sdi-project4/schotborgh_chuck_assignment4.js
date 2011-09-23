@@ -131,3 +131,13 @@ var smNum = function(array, givenNum) {
 		}
 		i+=1;
 	}
+    if (savedNum < givenNum){
+		console.log (givenNum + " a greater number than the given number doesn't exist within the sequenced array");
+		return givenNum;
+	}
+    else {
+		console.log (givenNum + " the number is not in the array, but the number greater with in the array is " + savedNum);
+		return savedNum;
+		
+	}
+};
