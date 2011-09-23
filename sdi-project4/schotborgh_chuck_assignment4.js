@@ -2,8 +2,8 @@
 //Author Chuck Schotborgh
 
 /*	
-String Lib SDI 2011
-Does a string follow a 123-456-7890 pattern like a phone number?	[1]
+String Lib SDI 2011                                          [1] 
+Does a string follow a 123-456-7890 pattern like a phone number?	
 */
 var phNum = function (digitsToTest){
 	console.log (digitsToTest);
@@ -25,44 +25,46 @@ if (phNum ("123-456-7890")){
 console.log ("Is a local phone number!");
 }
 
-/*
-	String Lib SDI 2011
-	Is the string a URL? (Does it start with http: or https:?)
-*/
 
+/*
+String Lib SDI 2011                                    [2]
+Is the string a URL? (Does it start with http: or https:?)	
+*/
 var verifyUrl = function (strUrl) {
-		var matchHttp = strUrl.match("http:");
-		var matchHttps = strUrl.match("https:");
-    if (matchHttp == "http:") {
-		console.log ("Yes! It tastes like http:!");
-    }
-    else if (matchHttps == "https:") {
-		console.log ("Yup! It smells like https:!");
-    }
-    else {
-		console.log ("Nope! Please try another type of Url address.");
-    }
+	var matchHttp = strUrl.match("http:");
+	var matchHttps = strUrl.match("https:");
+
+		if (matchHttp == "http:") {
+			console.log ("Yes! It tastes like http:!");
+		}
+		else if (matchHttps == "https:") {
+			console.log ("Yup! It smells like https:!");
+		}
+		else {
+			console.log ("Nope! Please try another type of Url address.");
+		}
 };
+
 verifyUrl("ftp://www.igt.com");
 verifyUrl("http://www.igt.com");
 verifyUrl("https://www.igt.com");
 
-/*
-	String Lib SDI 2011
-	Title-case a string (split into words, then uppercase the first letter of each word)
-*/
 
+/*
+String Lib SDI 2011                                                             [3] 
+Title-case a string (split into words, then uppercase the first letter of each word) 
+*/
 var capsCaseTitle = function (tCase) {
-		var wordVal = tCase.value;
-		var tCaseVal = '';
-		var wordVal = wordVal.split(' ');
+    var wordVal = tCase.value;
+    var tCaseVal = '';
+    var wordVal = wordVal.split(' ');
 		
 	for(var i=0; i < wordVal.length; i++) {
-		tCaseVal += wordVal
-			[i].substring
-		(0,1).toUpperCase() + wordVal[i].substring (1,wordVal[i].length) + ' ';
+            tCaseVal += wordVal[i].substring
+            (0,1).toUpperCase() + wordVal[i].substring
+            (1,wordVal[i].length) + ' ';
     }
-    tCase.value = tCaseVal;// SampleBox can be tested in my Html
+        tCase.value = tCaseVal;// SampleBox can be tested in my Html
 }
 /*
 	Number Lib SDI 2011
