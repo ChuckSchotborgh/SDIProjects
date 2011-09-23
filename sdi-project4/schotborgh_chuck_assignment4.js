@@ -26,6 +26,13 @@ console.log ("Is a local phone number!");
 }
 
 
+/*	
+String Lib SDI 2011
+Does a string follow an aaa@bbb.ccc pattern like an email address? [1]
+*/
+var emailMatch = function (emailToVerify){
+	console.log (emailToVerify);
+
 /*
 String Lib SDI 2011                                    [2]
 Is the string a URL? (Does it start with http: or https:?)	
@@ -66,6 +73,7 @@ var capsCaseTitle = function (tCase) {
     }
         tCase.value = tCaseVal;// SampleBox can be tested in my Html
 }
+
 /*
 	Number Lib SDI 2011
 	Find the number of hours or days difference between two dates
