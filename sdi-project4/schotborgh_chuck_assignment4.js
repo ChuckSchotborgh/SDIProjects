@@ -32,7 +32,10 @@ Does a string follow an aaa@bbb.ccc pattern like an email address? [1]
 */
 var emailMatch = function (emailToVerify){
 	console.log (emailToVerify);
-
+        var charPos1 = emailToVerify.search (/\W/);
+    if (charPos1 < 32){
+            var typString = emailToVerify.substring (charPos1++, emailToVerify.length);
+            var charPos2 = typString.search (/\W/);
 /*
 String Lib SDI 2011                                    [2]
 Is the string a URL? (Does it start with http: or https:?)	
