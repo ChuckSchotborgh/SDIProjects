@@ -75,6 +75,9 @@ var capsCaseTitle = function (tCase) {
 var today = new Date()
 	var yr = new Date("November 24, 2011");// change the date here
         yr.setYear = today.getYear;        
+		daysLeft = (yr.getTime() - today.getTime()) / (1000*60*60*24);
+		daysLeft = Math.round(daysLeft);
+
 
 /*
     String 		
