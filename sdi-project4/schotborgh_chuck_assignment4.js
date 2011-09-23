@@ -5,10 +5,27 @@
 	String Lib SDI 2011
 	Does a string follow a 123-456-7890 pattern like a phone number?
 */
-ar phNum = function (digitsToTest){
-		console.log (digitsToTest);
-			var firstDigits = digitsToTest.search (/\W/);
+var phNum = function (digitsToTest){
+	console.log (digitsToTest);
+	    var firstDigits = digitsToTest.search (/\W/);
+        
+        if (firstDigits === 3){
+	    var seeString = digitsToTest.substring (firstDigits+1, digitsToTest.length);
+	    var secondDigits = seeString.search (/\W/);
 
+	if (secondDigits === 3){
+			var lastDigits = seeString.substring (4, digitsToTest.length);
+		
+	if (lastDigits.length === 4){
+        return true;
+		}
+		}
+		}
+}
+if (phNum ("123-456-7890")){
+//if (phNum ("+0 123-456-7890")){ //this is not a local number no message
+console.log ("Is a local phone number!");
+}
     String 		
 
     [x]Does a string follow a 123-456-7890 pattern like a phone number?
