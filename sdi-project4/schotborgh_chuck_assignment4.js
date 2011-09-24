@@ -224,6 +224,12 @@ var min = 1;
 var max = 10;
 var ittr = 1000;
 
+    function embedMrks(embed,min,max,ittr) {
+            for (var i=min; i <= max; i++) {
+              console.log(i + ': ');
+              for (var j=0; j < embed[i]; j=j+(ittr/500)) console.log('|');
+              console.log(' ' + math.round (embed[i]*1000/ittr)/10 + '%');
+            }
 
 -Given an array of objects and the name of a key, 
 return the array sorted by the value of that key in each of the 
