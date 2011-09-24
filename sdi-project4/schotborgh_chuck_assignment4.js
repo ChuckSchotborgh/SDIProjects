@@ -199,7 +199,8 @@ console.log(strSwap.replace(/Forty Two/i,42));
 
 /*	
 String Lib SDI 2011
-Does a string follow a 123-456-7890 pattern like a phone number?	 [2a]
+Does a string follow a 123-456-7890 pattern like a phone number?
+[extra 2a]
 */
 var regExp = /\(?\d{3}\)?([-\/\.])\d{3}\1\d{4}/;
       function verifyPhNum(phoneInput){
@@ -213,7 +214,16 @@ var regExp = /\(?\d{3}\)?([-\/\.])\d{3}\1\d{4}/;
 Given a string that is a list of things separated by a given string, as well as another string separator, 
 return a string with the first separator changed to the second: "a,b,c" + "," + "/" ? "a/b/c".
 
--Fuzzy-match a number: is the number above or below a number within a certain percent?
+/*
+Number Lib SDI 2011- almost finished this one
+[x]Fuzzy-match a number: is the number above or below a number within a certain percent?
+*/
+
+/*
+var min = 1;
+var max = 10;
+var ittr = 1000;
+
 
 -Given an array of objects and the name of a key, 
 return the array sorted by the value of that key in each of the 
