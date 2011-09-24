@@ -61,15 +61,15 @@ var verifyUrl = function (strUrl) {
 	var matchHttp = strUrl.match("http:");
 	var matchHttps = strUrl.match("https:");
 
-		if (matchHttp == "http:") {
-			console.log ("Yes! It tastes like http:!");
-		}
-		else if (matchHttps == "https:") {
-			console.log ("Yup! It smells like https:!");
-		}
-		else {
-			console.log ("Nope! Please try another type of Url address.");
-		}
+            if (matchHttp == "http:") {
+                    console.log ("Yes! It tastes like http:!");
+            }
+            else if (matchHttps == "https:") {
+                    console.log ("Yup! It smells like https:!");
+            }
+            else {
+                    console.log ("Nope! Please try another type of Url address.");
+            }
 };
 
 verifyUrl("ftp://www.igt.com");
@@ -158,7 +158,7 @@ var test = [
         14,
         22,
         77
-	];
+];
 var smNum = function(array, givenNum) {
     var savedNum = Number.MAX_VALUE;
     var i = 0;
@@ -183,7 +183,7 @@ var smNum = function(array, givenNum) {
 	}
 };
 
-(smNum(test, 4));// test your numbers against existing sequenced array
+(smNum(test, 4));// input number values here. Test against the existing randomized array.
 
 
 /*
