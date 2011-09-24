@@ -229,8 +229,27 @@ var ittr = 1000;
               console.log(i + ': ');
               for (var j=0; j < embed[i]; j=j+(ittr/500)) console.log('|');
               console.log(' ' + math.round (embed[i]*1000/ittr)/10 + '%');
-            }
-
+}
+//function useFloor(min,max) {
+//  return math.floor(math.random()*(max-min+1)+min);
+//}
+//function useCeil(min,max) {
+//  return math.ceil(math.random()*(max-min+1)+min-1);
+//}
+function useround(min,max) {
+  return math.round(math.random()*(max-min)+min);
+}
+//math.round(math.random() * (max - min) + min)
+var embed = Array ();
+for (var k=min; k <= max; k++) {
+  embed[k] = 0;
+}
+for (var i=0; i < ittr; i++) {
+  embed[useround(min,max)]++;
+}
+embedMrks(embed,min,max,ittr);
+*/
+/*
 -Given an array of objects and the name of a key, 
 return the array sorted by the value of that key in each of the 
 objects: "a" + [{a:2},{a:3},{a:1}] ? [{a:1},{a:2},{a:3}].
