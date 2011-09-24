@@ -183,7 +183,7 @@ var smNum = function(array, givenNum) {
 	}
 };
 
-(smNum(test, 4));// input number values here. Test against the existing randomized array.
+(smNum(test, 4));// input numbers here. Test against the existing sequenced array.
 
 
 /*
@@ -195,6 +195,20 @@ Given a string version of a number such as "42", return the value as an actual N
 var strSwap = "Forty Two"
 console.log(strSwap.replace(/Forty Two/i,42));
 
+
+
+/*	
+String Lib SDI 2011
+Does a string follow a 123-456-7890 pattern like a phone number?	 [2a]
+*/
+var regExp = /\(?\d{3}\)?([-\/\.])\d{3}\1\d{4}/;
+      function verifyPhNum(phoneInput){
+        var OK = regExp.exec(phoneInput.value);
+        if (!OK)
+          console.log(RegExp.input + " isn't a phone number with area code!");
+        else
+          console.log("Thanks, your phone number is " + OK[0]);
+      }
 /*
 Given a string that is a list of things separated by a given string, as well as another string separator, 
 return a string with the first separator changed to the second: "a,b,c" + "," + "/" ? "a/b/c".
@@ -206,5 +220,3 @@ return the array sorted by the value of that key in each of the
 objects: "a" + [{a:2},{a:3},{a:1}] ? [{a:1},{a:2},{a:3}].
 
 */
-
-
